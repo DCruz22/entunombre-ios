@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import Cloudinary
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let config = CLDConfiguration(cloudinaryUrl: "cloudinary://498835649155245:11V5URzVhXfOmuOUW3PBGmc6B6s@etn")
+    var cloudinary: CLDCloudinary? = nil
+    let realm = try! Realm()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        cloudinary = CLDCloudinary(configuration: config!)
         return true
     }
 
@@ -40,7 +45,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

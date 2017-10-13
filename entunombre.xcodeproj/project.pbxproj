@@ -7,23 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B241B411F830EC6009F716A /* PictureListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B241B401F830EC6009F716A /* PictureListCell.xib */; };
 		4B5822F81F7DC218005DDA03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5822F71F7DC218005DDA03 /* AppDelegate.swift */; };
-		4B5822FA1F7DC218005DDA03 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5822F91F7DC218005DDA03 /* FirstViewController.swift */; };
+		4B5822FA1F7DC218005DDA03 /* MakePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5822F91F7DC218005DDA03 /* MakePictureViewController.swift */; };
 		4B5822FC1F7DC218005DDA03 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5822FB1F7DC218005DDA03 /* SecondViewController.swift */; };
 		4B5822FF1F7DC218005DDA03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5822FD1F7DC218005DDA03 /* Main.storyboard */; };
 		4B5823011F7DC218005DDA03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5823001F7DC218005DDA03 /* Assets.xcassets */; };
 		4B5823041F7DC218005DDA03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5823021F7DC218005DDA03 /* LaunchScreen.storyboard */; };
+		4B58237E1F7DD60F005DDA03 /* FSAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5823711F7DD604005DDA03 /* FSAlbumView.swift */; };
+		4B58237F1F7DD612005DDA03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5823701F7DD604005DDA03 /* Assets.xcassets */; };
+		4B5823801F7DD618005DDA03 /* FSAlbumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5823721F7DD604005DDA03 /* FSAlbumView.xib */; };
+		4B5823811F7DD61F005DDA03 /* FSAlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5823731F7DD604005DDA03 /* FSAlbumViewCell.swift */; };
+		4B5823821F7DD622005DDA03 /* FSAlbumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5823741F7DD604005DDA03 /* FSAlbumViewCell.xib */; };
+		4B5823831F7DD627005DDA03 /* FSCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5823751F7DD604005DDA03 /* FSCameraView.swift */; };
+		4B5823841F7DD62A005DDA03 /* FSCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5823761F7DD604005DDA03 /* FSCameraView.xib */; };
+		4B5823851F7DD62D005DDA03 /* FSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5823771F7DD604005DDA03 /* FSConstants.swift */; };
+		4B5823861F7DD630005DDA03 /* FSImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5823781F7DD604005DDA03 /* FSImageCropView.swift */; };
+		4B5823871F7DD632005DDA03 /* FSVideoCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5823791F7DD604005DDA03 /* FSVideoCameraView.swift */; };
+		4B5823881F7DD635005DDA03 /* FSVideoCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B58237A1F7DD604005DDA03 /* FSVideoCameraView.xib */; };
+		4B5823891F7DD638005DDA03 /* FusumaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58237B1F7DD604005DDA03 /* FusumaViewController.swift */; };
+		4B58238A1F7DD63A005DDA03 /* FusumaViewController.swift.orig in Resources */ = {isa = PBXBuildFile; fileRef = 4B58237C1F7DD604005DDA03 /* FusumaViewController.swift.orig */; };
+		4B58238B1F7DD63D005DDA03 /* FusumaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B58237D1F7DD604005DDA03 /* FusumaViewController.xib */; };
+		4B9DF4981F80A1EC00577A0F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DF4971F80A1EC00577A0F /* SplashViewController.swift */; };
+		4B9DF49A1F80A28D00577A0F /* MainTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DF4991F80A28D00577A0F /* MainTabsViewController.swift */; };
+		4B9DF49D1F80AB1C00577A0F /* FrameCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DF49C1F80AB1C00577A0F /* FrameCellCollectionViewCell.swift */; };
+		4BB23E471F7F488300F43598 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5823111F7DC2EE005DDA03 /* Extensions.swift */; };
+		4BE6E2151F81AE61005E1359 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6E2141F81AE61005E1359 /* BaseViewController.swift */; };
+		4BE6E2171F81B30B005E1359 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6E2161F81B30B005E1359 /* BaseTabBarViewController.swift */; };
+		4BE6E2191F81B3A1005E1359 /* PictureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6E2181F81B3A1005E1359 /* PictureListViewController.swift */; };
+		4BE6E21B1F81CA00005E1359 /* PictureListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6E21A1F81CA00005E1359 /* PictureListCell.swift */; };
+		4BE6E21D1F81CD8A005E1359 /* StarshipHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BE6E21C1F81CD8A005E1359 /* StarshipHeader.xib */; };
+		4BE6E2231F81E808005E1359 /* ParallaxCustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6E2221F81E808005E1359 /* ParallaxCustomHeader.swift */; };
+		4BEE81601F8339200056062B /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEE815F1F8339200056062B /* Picture.swift */; };
+		4BEE81611F834C0F0056062B /* CustomUITapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58230F1F7DC2EE005DDA03 /* CustomUITapGesture.swift */; };
+		BED8939CE34A0FFFA230CE7E /* Pods_entunombre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54191BB89C53758B4450EE7 /* Pods_entunombre.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B241B401F830EC6009F716A /* PictureListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureListCell.xib; sourceTree = "<group>"; };
 		4B5822F41F7DC218005DDA03 /* entunombre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entunombre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5822F71F7DC218005DDA03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B5822F91F7DC218005DDA03 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		4B5822F91F7DC218005DDA03 /* MakePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePictureViewController.swift; sourceTree = "<group>"; };
 		4B5822FB1F7DC218005DDA03 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		4B5822FE1F7DC218005DDA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B5823001F7DC218005DDA03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B5823031F7DC218005DDA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B5823051F7DC218005DDA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B58230E1F7DC2EE005DDA03 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		4B58230F1F7DC2EE005DDA03 /* CustomUITapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITapGesture.swift; sourceTree = "<group>"; };
+		4B5823111F7DC2EE005DDA03 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4B5823121F7DC2EE005DDA03 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		4B5823701F7DD604005DDA03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B5823711F7DD604005DDA03 /* FSAlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSAlbumView.swift; sourceTree = "<group>"; };
+		4B5823721F7DD604005DDA03 /* FSAlbumView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSAlbumView.xib; sourceTree = "<group>"; };
+		4B5823731F7DD604005DDA03 /* FSAlbumViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSAlbumViewCell.swift; sourceTree = "<group>"; };
+		4B5823741F7DD604005DDA03 /* FSAlbumViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSAlbumViewCell.xib; sourceTree = "<group>"; };
+		4B5823751F7DD604005DDA03 /* FSCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCameraView.swift; sourceTree = "<group>"; };
+		4B5823761F7DD604005DDA03 /* FSCameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSCameraView.xib; sourceTree = "<group>"; };
+		4B5823771F7DD604005DDA03 /* FSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSConstants.swift; sourceTree = "<group>"; };
+		4B5823781F7DD604005DDA03 /* FSImageCropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSImageCropView.swift; sourceTree = "<group>"; };
+		4B5823791F7DD604005DDA03 /* FSVideoCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSVideoCameraView.swift; sourceTree = "<group>"; };
+		4B58237A1F7DD604005DDA03 /* FSVideoCameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSVideoCameraView.xib; sourceTree = "<group>"; };
+		4B58237B1F7DD604005DDA03 /* FusumaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FusumaViewController.swift; sourceTree = "<group>"; };
+		4B58237C1F7DD604005DDA03 /* FusumaViewController.swift.orig */ = {isa = PBXFileReference; lastKnownFileType = text; path = FusumaViewController.swift.orig; sourceTree = "<group>"; };
+		4B58237D1F7DD604005DDA03 /* FusumaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FusumaViewController.xib; sourceTree = "<group>"; };
+		4B9DF4971F80A1EC00577A0F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4B9DF4991F80A28D00577A0F /* MainTabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabsViewController.swift; sourceTree = "<group>"; };
+		4B9DF49C1F80AB1C00577A0F /* FrameCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		4BE6E2141F81AE61005E1359 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4BE6E2161F81B30B005E1359 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		4BE6E2181F81B3A1005E1359 /* PictureListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureListViewController.swift; sourceTree = "<group>"; };
+		4BE6E21A1F81CA00005E1359 /* PictureListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureListCell.swift; sourceTree = "<group>"; };
+		4BE6E21C1F81CD8A005E1359 /* StarshipHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarshipHeader.xib; sourceTree = "<group>"; };
+		4BE6E2221F81E808005E1359 /* ParallaxCustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCustomHeader.swift; sourceTree = "<group>"; };
+		4BEE815F1F8339200056062B /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		92AC654C7295781773F6CD49 /* Pods-entunombre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-entunombre.debug.xcconfig"; path = "Pods/Target Support Files/Pods-entunombre/Pods-entunombre.debug.xcconfig"; sourceTree = "<group>"; };
+		B54191BB89C53758B4450EE7 /* Pods_entunombre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_entunombre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAAA26F6F9448F943090070 /* Pods-entunombre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-entunombre.release.xcconfig"; path = "Pods/Target Support Files/Pods-entunombre/Pods-entunombre.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED8939CE34A0FFFA230CE7E /* Pods_entunombre.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +103,8 @@
 			children = (
 				4B5822F61F7DC218005DDA03 /* entunombre */,
 				4B5822F51F7DC218005DDA03 /* Products */,
+				885ED654D4F90ECD3AF707E6 /* Pods */,
+				87734694CAFF706A627BECD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +119,125 @@
 		4B5822F61F7DC218005DDA03 /* entunombre */ = {
 			isa = PBXGroup;
 			children = (
+				4BEE815D1F83391F0056062B /* Data */,
+				4B5823131F7DC4C2005DDA03 /* Libraries */,
+				4B58230D1F7DC2CE005DDA03 /* Helpers */,
+				4B58230C1F7DC2C8005DDA03 /* UI */,
+				4B58230B1F7DC2BF005DDA03 /* ViewControllers */,
 				4B5822F71F7DC218005DDA03 /* AppDelegate.swift */,
-				4B5822F91F7DC218005DDA03 /* FirstViewController.swift */,
-				4B5822FB1F7DC218005DDA03 /* SecondViewController.swift */,
-				4B5822FD1F7DC218005DDA03 /* Main.storyboard */,
 				4B5823001F7DC218005DDA03 /* Assets.xcassets */,
 				4B5823021F7DC218005DDA03 /* LaunchScreen.storyboard */,
 				4B5823051F7DC218005DDA03 /* Info.plist */,
 			);
 			path = entunombre;
+			sourceTree = "<group>";
+		};
+		4B58230B1F7DC2BF005DDA03 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BE6E2161F81B30B005E1359 /* BaseTabBarViewController.swift */,
+				4BE6E2141F81AE61005E1359 /* BaseViewController.swift */,
+				4B9DF4991F80A28D00577A0F /* MainTabsViewController.swift */,
+				4B5822F91F7DC218005DDA03 /* MakePictureViewController.swift */,
+				4B5822FB1F7DC218005DDA03 /* SecondViewController.swift */,
+				4B9DF4971F80A1EC00577A0F /* SplashViewController.swift */,
+				4BE6E2181F81B3A1005E1359 /* PictureListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4B58230C1F7DC2C8005DDA03 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4B9DF49B1F80AAF800577A0F /* Widgets */,
+				4B5822FD1F7DC218005DDA03 /* Main.storyboard */,
+				4BE6E21C1F81CD8A005E1359 /* StarshipHeader.xib */,
+				4B241B401F830EC6009F716A /* PictureListCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4B58230D1F7DC2CE005DDA03 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4B58230F1F7DC2EE005DDA03 /* CustomUITapGesture.swift */,
+				4B5823111F7DC2EE005DDA03 /* Extensions.swift */,
+				4B5823121F7DC2EE005DDA03 /* Helpers.swift */,
+				4B58230E1F7DC2EE005DDA03 /* LocalStorage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4B5823131F7DC4C2005DDA03 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4B58236F1F7DD604005DDA03 /* fusuma */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		4B58236F1F7DD604005DDA03 /* fusuma */ = {
+			isa = PBXGroup;
+			children = (
+				4B5823701F7DD604005DDA03 /* Assets.xcassets */,
+				4B5823711F7DD604005DDA03 /* FSAlbumView.swift */,
+				4B5823721F7DD604005DDA03 /* FSAlbumView.xib */,
+				4B5823731F7DD604005DDA03 /* FSAlbumViewCell.swift */,
+				4B5823741F7DD604005DDA03 /* FSAlbumViewCell.xib */,
+				4B5823751F7DD604005DDA03 /* FSCameraView.swift */,
+				4B5823761F7DD604005DDA03 /* FSCameraView.xib */,
+				4B5823771F7DD604005DDA03 /* FSConstants.swift */,
+				4B5823781F7DD604005DDA03 /* FSImageCropView.swift */,
+				4B5823791F7DD604005DDA03 /* FSVideoCameraView.swift */,
+				4B58237A1F7DD604005DDA03 /* FSVideoCameraView.xib */,
+				4B58237B1F7DD604005DDA03 /* FusumaViewController.swift */,
+				4B58237C1F7DD604005DDA03 /* FusumaViewController.swift.orig */,
+				4B58237D1F7DD604005DDA03 /* FusumaViewController.xib */,
+			);
+			path = fusuma;
+			sourceTree = "<group>";
+		};
+		4B9DF49B1F80AAF800577A0F /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				4B9DF49C1F80AB1C00577A0F /* FrameCellCollectionViewCell.swift */,
+				4BE6E21A1F81CA00005E1359 /* PictureListCell.swift */,
+				4BE6E2221F81E808005E1359 /* ParallaxCustomHeader.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		4BEE815D1F83391F0056062B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4BEE815E1F8339200056062B /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4BEE815E1F8339200056062B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BEE815F1F8339200056062B /* Picture.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		87734694CAFF706A627BECD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B54191BB89C53758B4450EE7 /* Pods_entunombre.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		885ED654D4F90ECD3AF707E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92AC654C7295781773F6CD49 /* Pods-entunombre.debug.xcconfig */,
+				DFAAA26F6F9448F943090070 /* Pods-entunombre.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B5823081F7DC218005DDA03 /* Build configuration list for PBXNativeTarget "entunombre" */;
 			buildPhases = (
+				3180A37A7FA1E69A86928631 /* [CP] Check Pods Manifest.lock */,
 				4B5822F01F7DC218005DDA03 /* Sources */,
 				4B5822F11F7DC218005DDA03 /* Frameworks */,
 				4B5822F21F7DC218005DDA03 /* Resources */,
+				E2321A2F50680B8840098BBF /* [CP] Embed Pods Frameworks */,
+				7E95868A1AF686BBBE2E8F91 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,7 +275,7 @@
 				TargetAttributes = {
 					4B5822F31F7DC218005DDA03 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -126,13 +302,90 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE6E21D1F81CD8A005E1359 /* StarshipHeader.xib in Resources */,
+				4B5823801F7DD618005DDA03 /* FSAlbumView.xib in Resources */,
+				4B58238A1F7DD63A005DDA03 /* FusumaViewController.swift.orig in Resources */,
 				4B5823041F7DC218005DDA03 /* LaunchScreen.storyboard in Resources */,
+				4B5823881F7DD635005DDA03 /* FSVideoCameraView.xib in Resources */,
+				4B5823841F7DD62A005DDA03 /* FSCameraView.xib in Resources */,
 				4B5823011F7DC218005DDA03 /* Assets.xcassets in Resources */,
+				4B5823821F7DD622005DDA03 /* FSAlbumViewCell.xib in Resources */,
+				4B241B411F830EC6009F716A /* PictureListCell.xib in Resources */,
+				4B58237F1F7DD612005DDA03 /* Assets.xcassets in Resources */,
 				4B5822FF1F7DC218005DDA03 /* Main.storyboard in Resources */,
+				4B58238B1F7DD63D005DDA03 /* FusumaViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3180A37A7FA1E69A86928631 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-entunombre-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E95868A1AF686BBBE2E8F91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-entunombre/Pods-entunombre-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2321A2F50680B8840098BBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-entunombre/Pods-entunombre-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AssociatedValues/AssociatedValues.framework",
+				"${BUILT_PRODUCTS_DIR}/Cloudinary/Cloudinary.framework",
+				"${BUILT_PRODUCTS_DIR}/MXParallaxHeader/MXParallaxHeader.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Sharaku/Sharaku.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AssociatedValues.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cloudinary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXParallaxHeader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sharaku.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-entunombre/Pods-entunombre-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B5822F01F7DC218005DDA03 /* Sources */ = {
@@ -140,8 +393,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5822FC1F7DC218005DDA03 /* SecondViewController.swift in Sources */,
+				4BEE81611F834C0F0056062B /* CustomUITapGesture.swift in Sources */,
+				4B5823871F7DD632005DDA03 /* FSVideoCameraView.swift in Sources */,
+				4B58237E1F7DD60F005DDA03 /* FSAlbumView.swift in Sources */,
+				4B9DF4981F80A1EC00577A0F /* SplashViewController.swift in Sources */,
+				4B5823831F7DD627005DDA03 /* FSCameraView.swift in Sources */,
+				4BE6E2191F81B3A1005E1359 /* PictureListViewController.swift in Sources */,
+				4BE6E2151F81AE61005E1359 /* BaseViewController.swift in Sources */,
+				4B5823861F7DD630005DDA03 /* FSImageCropView.swift in Sources */,
+				4B9DF49A1F80A28D00577A0F /* MainTabsViewController.swift in Sources */,
 				4B5822F81F7DC218005DDA03 /* AppDelegate.swift in Sources */,
-				4B5822FA1F7DC218005DDA03 /* FirstViewController.swift in Sources */,
+				4B5822FA1F7DC218005DDA03 /* MakePictureViewController.swift in Sources */,
+				4B5823851F7DD62D005DDA03 /* FSConstants.swift in Sources */,
+				4BE6E2231F81E808005E1359 /* ParallaxCustomHeader.swift in Sources */,
+				4BE6E21B1F81CA00005E1359 /* PictureListCell.swift in Sources */,
+				4B9DF49D1F80AB1C00577A0F /* FrameCellCollectionViewCell.swift in Sources */,
+				4B5823811F7DD61F005DDA03 /* FSAlbumViewCell.swift in Sources */,
+				4BEE81601F8339200056062B /* Picture.swift in Sources */,
+				4BB23E471F7F488300F43598 /* Extensions.swift in Sources */,
+				4B5823891F7DD638005DDA03 /* FusumaViewController.swift in Sources */,
+				4BE6E2171F81B30B005E1359 /* BaseTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +472,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(SRCROOT)",
+					"$(SRCROOT)/entunombre/Libraries",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -221,6 +496,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -258,6 +534,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(SRCROOT)",
+					"$(SRCROOT)/entunombre/Libraries",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -270,20 +550,25 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		4B5823091F7DC218005DDA03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AC654C7295781773F6CD49 /* Pods-entunombre.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y65TQ72XYL;
 				INFOPLIST_FILE = entunombre/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dulcerefugio.entunombre;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulcerefugiord.entunombre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ab9f3830-3de4-4b8c-bd9b-5b6396765cc2";
+				PROVISIONING_PROFILE_SPECIFIER = "etnapp-devel";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -291,14 +576,18 @@
 		};
 		4B58230A1F7DC218005DDA03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFAAA26F6F9448F943090070 /* Pods-entunombre.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y65TQ72XYL;
 				INFOPLIST_FILE = entunombre/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dulcerefugio.entunombre;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulcerefugiord.entunombre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "46d78f18-6b1e-4db2-abf7-f97901bd92d5";
+				PROVISIONING_PROFILE_SPECIFIER = "etnapp-prod";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
