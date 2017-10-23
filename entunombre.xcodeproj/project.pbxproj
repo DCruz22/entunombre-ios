@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4B241B411F830EC6009F716A /* PictureListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B241B401F830EC6009F716A /* PictureListCell.xib */; };
+		4B4F9A711F9825830046B289 /* VideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B4F9A701F9825830046B289 /* VideoListCell.xib */; };
+		4B4F9A731F9826EE0046B289 /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F9A721F9826EE0046B289 /* VideoListViewController.swift */; };
+		4B4F9A751F9827CF0046B289 /* VideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F9A741F9827CF0046B289 /* VideoListCell.swift */; };
+		4B4F9A771F9831240046B289 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F9A761F9831240046B289 /* VideoPlayerViewController.swift */; };
+		4B4F9A781F984F5C0046B289 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58230E1F7DC2EE005DDA03 /* LocalStorage.swift */; };
 		4B5822F81F7DC218005DDA03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5822F71F7DC218005DDA03 /* AppDelegate.swift */; };
 		4B5822FA1F7DC218005DDA03 /* MakePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5822F91F7DC218005DDA03 /* MakePictureViewController.swift */; };
 		4B5822FC1F7DC218005DDA03 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5822FB1F7DC218005DDA03 /* SecondViewController.swift */; };
@@ -31,6 +36,8 @@
 		4B9DF4981F80A1EC00577A0F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DF4971F80A1EC00577A0F /* SplashViewController.swift */; };
 		4B9DF49A1F80A28D00577A0F /* MainTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DF4991F80A28D00577A0F /* MainTabsViewController.swift */; };
 		4B9DF49D1F80AB1C00577A0F /* FrameCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DF49C1F80AB1C00577A0F /* FrameCellCollectionViewCell.swift */; };
+		4BB1C1C61F96E73800906E21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1C1C51F96E73800906E21 /* Constants.swift */; };
+		4BB1C1C81F96ECD300906E21 /* YoutubeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1C1C71F96ECD300906E21 /* YoutubeVideo.swift */; };
 		4BB23E471F7F488300F43598 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5823111F7DC2EE005DDA03 /* Extensions.swift */; };
 		4BE6E2151F81AE61005E1359 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6E2141F81AE61005E1359 /* BaseViewController.swift */; };
 		4BE6E2171F81B30B005E1359 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6E2161F81B30B005E1359 /* BaseTabBarViewController.swift */; };
@@ -45,6 +52,10 @@
 
 /* Begin PBXFileReference section */
 		4B241B401F830EC6009F716A /* PictureListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureListCell.xib; sourceTree = "<group>"; };
+		4B4F9A701F9825830046B289 /* VideoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoListCell.xib; sourceTree = "<group>"; };
+		4B4F9A721F9826EE0046B289 /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
+		4B4F9A741F9827CF0046B289 /* VideoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListCell.swift; sourceTree = "<group>"; };
+		4B4F9A761F9831240046B289 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		4B5822F41F7DC218005DDA03 /* entunombre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entunombre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5822F71F7DC218005DDA03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B5822F91F7DC218005DDA03 /* MakePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePictureViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +85,8 @@
 		4B9DF4971F80A1EC00577A0F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		4B9DF4991F80A28D00577A0F /* MainTabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabsViewController.swift; sourceTree = "<group>"; };
 		4B9DF49C1F80AB1C00577A0F /* FrameCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		4BB1C1C51F96E73800906E21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4BB1C1C71F96ECD300906E21 /* YoutubeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideo.swift; sourceTree = "<group>"; };
 		4BE6E2141F81AE61005E1359 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4BE6E2161F81B30B005E1359 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		4BE6E2181F81B3A1005E1359 /* PictureListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureListViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +132,7 @@
 		4B5822F61F7DC218005DDA03 /* entunombre */ = {
 			isa = PBXGroup;
 			children = (
+				4BB1C1C41F96E72A00906E21 /* Network */,
 				4BEE815D1F83391F0056062B /* Data */,
 				4B5823131F7DC4C2005DDA03 /* Libraries */,
 				4B58230D1F7DC2CE005DDA03 /* Helpers */,
@@ -142,6 +156,8 @@
 				4B5822FB1F7DC218005DDA03 /* SecondViewController.swift */,
 				4B9DF4971F80A1EC00577A0F /* SplashViewController.swift */,
 				4BE6E2181F81B3A1005E1359 /* PictureListViewController.swift */,
+				4B4F9A721F9826EE0046B289 /* VideoListViewController.swift */,
+				4B4F9A761F9831240046B289 /* VideoPlayerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -153,6 +169,7 @@
 				4B5822FD1F7DC218005DDA03 /* Main.storyboard */,
 				4BE6E21C1F81CD8A005E1359 /* StarshipHeader.xib */,
 				4B241B401F830EC6009F716A /* PictureListCell.xib */,
+				4B4F9A701F9825830046B289 /* VideoListCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -203,8 +220,17 @@
 				4B9DF49C1F80AB1C00577A0F /* FrameCellCollectionViewCell.swift */,
 				4BE6E21A1F81CA00005E1359 /* PictureListCell.swift */,
 				4BE6E2221F81E808005E1359 /* ParallaxCustomHeader.swift */,
+				4B4F9A741F9827CF0046B289 /* VideoListCell.swift */,
 			);
 			path = Widgets;
+			sourceTree = "<group>";
+		};
+		4BB1C1C41F96E72A00906E21 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1C1C51F96E73800906E21 /* Constants.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		4BEE815D1F83391F0056062B /* Data */ = {
@@ -219,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				4BEE815F1F8339200056062B /* Picture.swift */,
+				4BB1C1C71F96ECD300906E21 /* YoutubeVideo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,6 +280,7 @@
 				4B5822F21F7DC218005DDA03 /* Resources */,
 				E2321A2F50680B8840098BBF /* [CP] Embed Pods Frameworks */,
 				7E95868A1AF686BBBE2E8F91 /* [CP] Copy Pods Resources */,
+				4B4F9A791F9851250046B289 /* fabric */,
 			);
 			buildRules = (
 			);
@@ -302,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4F9A711F9825830046B289 /* VideoListCell.xib in Resources */,
 				4BE6E21D1F81CD8A005E1359 /* StarshipHeader.xib in Resources */,
 				4B5823801F7DD618005DDA03 /* FSAlbumView.xib in Resources */,
 				4B58238A1F7DD63A005DDA03 /* FusumaViewController.swift.orig in Resources */,
@@ -338,6 +367,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4B4F9A791F9851250046B289 /* fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ee228f26ba829e5fbcf79da3f936b6b623717955 383b3d70f6d91a583cd801fbcec46a2361bf0fcb57e1ea01dfdb008a551ac764";
+		};
 		7E95868A1AF686BBBE2E8F91 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,23 +405,31 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-entunombre/Pods-entunombre-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/AssociatedValues/AssociatedValues.framework",
 				"${BUILT_PRODUCTS_DIR}/Cloudinary/Cloudinary.framework",
 				"${BUILT_PRODUCTS_DIR}/MXParallaxHeader/MXParallaxHeader.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialShowcase/MaterialShowcase.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Sharaku/Sharaku.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AssociatedValues.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cloudinary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXParallaxHeader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialShowcase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sharaku.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -393,7 +444,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5822FC1F7DC218005DDA03 /* SecondViewController.swift in Sources */,
+				4BB1C1C61F96E73800906E21 /* Constants.swift in Sources */,
 				4BEE81611F834C0F0056062B /* CustomUITapGesture.swift in Sources */,
+				4B4F9A751F9827CF0046B289 /* VideoListCell.swift in Sources */,
 				4B5823871F7DD632005DDA03 /* FSVideoCameraView.swift in Sources */,
 				4B58237E1F7DD60F005DDA03 /* FSAlbumView.swift in Sources */,
 				4B9DF4981F80A1EC00577A0F /* SplashViewController.swift in Sources */,
@@ -405,9 +458,13 @@
 				4B5822F81F7DC218005DDA03 /* AppDelegate.swift in Sources */,
 				4B5822FA1F7DC218005DDA03 /* MakePictureViewController.swift in Sources */,
 				4B5823851F7DD62D005DDA03 /* FSConstants.swift in Sources */,
+				4B4F9A771F9831240046B289 /* VideoPlayerViewController.swift in Sources */,
 				4BE6E2231F81E808005E1359 /* ParallaxCustomHeader.swift in Sources */,
 				4BE6E21B1F81CA00005E1359 /* PictureListCell.swift in Sources */,
+				4B4F9A781F984F5C0046B289 /* LocalStorage.swift in Sources */,
 				4B9DF49D1F80AB1C00577A0F /* FrameCellCollectionViewCell.swift in Sources */,
+				4BB1C1C81F96ECD300906E21 /* YoutubeVideo.swift in Sources */,
+				4B4F9A731F9826EE0046B289 /* VideoListViewController.swift in Sources */,
 				4B5823811F7DD61F005DDA03 /* FSAlbumViewCell.swift in Sources */,
 				4BEE81601F8339200056062B /* Picture.swift in Sources */,
 				4BB23E471F7F488300F43598 /* Extensions.swift in Sources */,
@@ -563,14 +620,17 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y65TQ72XYL;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = entunombre/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dulcerefugiord.entunombre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ab9f3830-3de4-4b8c-bd9b-5b6396765cc2";
+				PROVISIONING_PROFILE = "3280ca57-6f6f-4ce4-a3c8-40c42ee7e073";
 				PROVISIONING_PROFILE_SPECIFIER = "etnapp-devel";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -582,14 +642,17 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y65TQ72XYL;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = entunombre/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dulcerefugiord.entunombre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "46d78f18-6b1e-4db2-abf7-f97901bd92d5";
 				PROVISIONING_PROFILE_SPECIFIER = "etnapp-prod";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

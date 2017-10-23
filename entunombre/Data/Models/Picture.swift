@@ -11,5 +11,5 @@ import RealmSwift
 
 public class Picture: Object {
     @objc dynamic var timestamp = 0
-    @objc dynamic var url=""
+    @objc dynamic var url = ""
 }

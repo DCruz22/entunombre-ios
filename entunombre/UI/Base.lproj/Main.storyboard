@@ -16,10 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="m3b-Gg-JCd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zly-GA-aD1">
+                                <rect key="frame" x="30" y="498.5" width="315" height="68.5"/>
+                                <string key="text">¿Aún no creas una foto?
+Haz una nueva clickeando 
+el ícono de la cámara.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gwj-z6-JPN" firstAttribute="trailing" secondItem="Zly-GA-aD1" secondAttribute="trailing" constant="30" id="6NN-GC-WtV"/>
+                            <constraint firstItem="gwj-z6-JPN" firstAttribute="bottom" secondItem="Zly-GA-aD1" secondAttribute="bottom" constant="100" id="Tgi-MA-fj3"/>
+                            <constraint firstItem="Zly-GA-aD1" firstAttribute="leading" secondItem="gwj-z6-JPN" secondAttribute="leading" constant="30" id="pzX-oi-euS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gwj-z6-JPN"/>
                     </view>
                     <connections>
+                        <outlet property="lbNoPicture" destination="Zly-GA-aD1" id="GQ6-Ft-saR"/>
                         <segue destination="9pv-A4-QxB" kind="show" id="IOc-8Y-7xq"/>
                     </connections>
                 </viewController>
@@ -205,38 +222,71 @@
             </objects>
             <point key="canvasLocation" x="886" y="-345"/>
         </scene>
+        <!--Video Player View Controller-->
+        <scene sceneID="eaB-Lz-p7m">
+            <objects>
+                <viewController storyboardIdentifier="VideoPlayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FIt-3w-Iew" customClass="VideoPlayerViewController" customModule="entunombre" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mmf-c8-2rv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEZ-ik-beD" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PAz-L9-zKR">
+                                <rect key="frame" x="177" y="355.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PAz-L9-zKR" firstAttribute="centerX" secondItem="ufp-6O-zFg" secondAttribute="centerX" id="18R-XI-4us"/>
+                            <constraint firstItem="PAz-L9-zKR" firstAttribute="centerY" secondItem="ufp-6O-zFg" secondAttribute="centerY" id="20H-lD-CFL"/>
+                            <constraint firstItem="ufp-6O-zFg" firstAttribute="bottom" secondItem="yEZ-ik-beD" secondAttribute="bottom" id="Bql-RR-2sr"/>
+                            <constraint firstItem="yEZ-ik-beD" firstAttribute="top" secondItem="ufp-6O-zFg" secondAttribute="top" id="SN7-qs-Xuj"/>
+                            <constraint firstItem="ufp-6O-zFg" firstAttribute="trailing" secondItem="yEZ-ik-beD" secondAttribute="trailing" id="V2R-6m-4JY"/>
+                            <constraint firstItem="yEZ-ik-beD" firstAttribute="leading" secondItem="ufp-6O-zFg" secondAttribute="leading" id="wX9-ey-HeO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ufp-6O-zFg"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="PAz-L9-zKR" id="11A-2x-1Z1"/>
+                        <outlet property="player" destination="yEZ-ik-beD" id="aEI-Lc-DFd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTU-AG-m52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="330"/>
+        </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="entunombre" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8rJ-Kc-sve" customClass="VideoListViewController" customModule="entunombre" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="86.5" y="312" width="202" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="79.5" y="363" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="civ-vy-oaa">
+                                <rect key="frame" x="76" y="343.5" width="223.5" height="45.5"/>
+                                <string key="text">No hay videos disponibles 
+en este momento.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="civ-vy-oaa" firstAttribute="centerY" secondItem="O1u-W8-tvY" secondAttribute="centerY" id="UMJ-Hh-ltg"/>
+                            <constraint firstItem="civ-vy-oaa" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="ksK-69-bn5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="lbNoVideo" destination="civ-vy-oaa" id="Ens-HH-r6B"/>
+                        <segue destination="FIt-3w-Iew" kind="show" id="1AH-cU-38Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

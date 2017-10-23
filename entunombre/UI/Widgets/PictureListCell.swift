@@ -14,6 +14,7 @@ class PictureListCell: UITableViewCell {
     @IBOutlet weak var ivPicture: UIImageView!
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var lbTime: UILabel!
+    @IBOutlet weak var lbNameWidthConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()

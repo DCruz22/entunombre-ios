@@ -3,29 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "MakePictureViewController.viewWillAppear(_:):MakePictureViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.framesCollectionViewHeightConstraint.constant">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in MakePictureViewController.onSubmitPicture(_:):MakePictureViewController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "MainTabsViewController.viewDidLoad():MainTabsViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "nvc?.viewControllers">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "MainTabsViewController.viewWillAppear(_:):MainTabsViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "(sb?.instantiateViewController(withIdentifier: &quot;NavigationController&quot;) as? UINavigationController).viewControllers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PictureListViewController.tableView(_:cellForRowAt:):PictureListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell?.frame.size.width">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -41,10 +30,48 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in closure #1 in MakePictureViewController.fusumaImageSelected(_:source:):MakePictureViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.croppedImage.imageOrientation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in MakePictureViewController.onSubmitPicture(_:):MakePictureViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MainTabsViewController.viewDidLoad():MainTabsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nvc?.viewControllers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "PictureListViewController.onPictureCreated(_:):PictureListViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "AppDelegate.shared.realm.objects(Picture.self).count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MakePictureViewController.viewWillAppear(_:):MakePictureViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.framesCollectionViewHeightConstraint.constant">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SplashViewController.viewDidAppear(_:):SplashViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in SplashViewController.viewDidAppear(_:):SplashViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "$0">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

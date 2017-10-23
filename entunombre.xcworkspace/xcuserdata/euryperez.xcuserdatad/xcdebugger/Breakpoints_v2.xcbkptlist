@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MainTabsViewController.swift"
-            timestampString = "529475266.425469"
+            timestampString = "530077091.692318"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MainTabsViewController.swift"
-            timestampString = "529475266.425774"
+            timestampString = "530077091.700043"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.425963"
+            timestampString = "530411807.56499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.426008"
+            timestampString = "530411807.565781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.426045"
+            timestampString = "530411807.566242"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.426096"
+            timestampString = "530411807.566679"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "MakePictureViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.426132"
+            timestampString = "530411807.567102"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.426167"
+            timestampString = "530411807.567614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "shViewControllerImageDidFilter(image:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.426203"
+            timestampString = "530411807.568075"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.426238"
+            timestampString = "530411807.568597"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "fusumaImageSelected(_:source:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,12 +202,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.426273"
+            timestampString = "530411807.56905"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "fusumaClosed()"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "addSubmitButton()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -218,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/Libraries/fusuma/FusumaViewController.swift"
-            timestampString = "528738573.583624"
+            timestampString = "530408089.114656"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "313"
@@ -234,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/Libraries/fusuma/FusumaViewController.swift"
-            timestampString = "528738573.584165"
+            timestampString = "530408089.114712"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "317"
@@ -250,12 +250,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.42634"
+            timestampString = "530411807.569598"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "fusumaWillClosed()"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "addSubmitButton()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -266,7 +266,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.426377"
+            timestampString = "530411807.57001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -282,7 +282,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
-            timestampString = "529475266.426412"
+            timestampString = "530411807.57042"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/PictureListViewController.swift"
-            timestampString = "529475266.426477"
+            timestampString = "530411807.570876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "onPictureCreated(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -314,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/PictureListViewController.swift"
-            timestampString = "529475266.426962"
+            timestampString = "530411807.571163"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "onPictureCreated(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/PictureListViewController.swift"
-            timestampString = "529475266.427417"
+            timestampString = "530411807.571221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "onPictureCreated(_:)"
             landmarkType = "7">
             <Locations>
@@ -378,11 +378,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/PictureListViewController.swift"
-            timestampString = "529475266.427855"
+            timestampString = "530411807.571256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "onPictureCreated(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -394,12 +394,188 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "entunombre/ViewControllers/PictureListViewController.swift"
-            timestampString = "529475266.428137"
+            timestampString = "530411807.571291"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "onPictureCreated(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "entunombre/ViewControllers/SplashViewController.swift"
+            timestampString = "530124949.872027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "entunombre/ViewControllers/SplashViewController.swift"
+            timestampString = "530124949.872116"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;entunombre.YoutubeVideoResponse&gt;) -&gt; () in entunombre.SplashViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "entunombre"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/euryperez/devel/me/entunombre-ios/entunombre/ViewControllers/SplashViewController.swift"
+                  timestampString = "529989337.167012"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (entunombre.YoutubeVideo) -&gt; entunombre.YoutubeVideoDB in closure #1 (Alamofire.DataResponse&lt;entunombre.YoutubeVideoResponse&gt;) -&gt; () in entunombre.SplashViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "entunombre"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/euryperez/devel/me/entunombre-ios/entunombre/ViewControllers/SplashViewController.swift"
+                  timestampString = "529989337.168337"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "444">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "entunombre/ViewControllers/SplashViewController.swift"
+            timestampString = "530124949.872191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "entunombre/ViewControllers/SplashViewController.swift"
+            timestampString = "530124949.872269"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;entunombre.YoutubeVideoResponse&gt;) -&gt; () in entunombre.SplashViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "entunombre"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/euryperez/devel/me/entunombre-ios/entunombre/ViewControllers/SplashViewController.swift"
+                  timestampString = "529989425.711953"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #1 (Alamofire.DataResponse&lt;entunombre.YoutubeVideoResponse&gt;) -&gt; () in entunombre.SplashViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "entunombre"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/euryperez/devel/me/entunombre-ios/entunombre/ViewControllers/SplashViewController.swift"
+                  timestampString = "529989425.71556"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "entunombre/ViewControllers/VideoPlayerViewController.swift"
+            timestampString = "530079133.138201"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "playerReady(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "entunombre/ViewControllers/PictureListViewController.swift"
+            timestampString = "530411807.571389"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "entunombre/ViewControllers/MakePictureViewController.swift"
+            timestampString = "530411807.571425"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "fusumaClosed()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

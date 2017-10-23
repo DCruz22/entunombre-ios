@@ -57,16 +57,8 @@ class MakePictureViewController: BaseViewController, FusumaDelegate, SHViewContr
         isVCLoaded = true
     }
     
-    
-    @objc func onSubmitPicture(_ sender : UIButton){
-        let img = self.imagesParentView.capture()
-        if let del = self.delegate {
-            del.onPictureCreated(img)
-        }
-        
-        if let nav = self.navigationController {
-            nav.popViewController(animated: true)
-        }
+    deinit {
+        print("deiniting")
     }
     // Return the image which is selected from camera roll or is taken via the camera.
     
@@ -74,15 +66,15 @@ class MakePictureViewController: BaseViewController, FusumaDelegate, SHViewContr
         vLoading.alpha = 1
         isImageSelected = true
         DispatchQueue.global(qos: .background).async {
-            self.croppedImage = image.compressTo(1)
-            let imgData = NSData(data: UIImageJPEGRepresentation(image, 0.5)!)
+            self.croppedImage = image.compressTo(2)
+            /*let imgData = NSData(data: UIImageJPEGRepresentation(image, 1)!)
             let imageSize = imgData.length
-            print("size of image in KB: %f ", Double(imageSize) / 1024.0)
+            print("size of image in KB: %f ", Double(imageSize) / 1024.0)*/
             
             DispatchQueue.main.async {
                 //your main thread
                 self.vLoading.alpha = 0
-                let vc = SHViewController(image: image)
+                let vc = SHViewController(image: self.croppedImage!)
                 vc.delegate = self
                 self.present(vc, animated:true, completion: nil)
                 return
@@ -117,6 +109,17 @@ class MakePictureViewController: BaseViewController, FusumaDelegate, SHViewContr
         }
         
         self.navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: btnCreatePicture)]
+    }
+    
+    @objc func onSubmitPicture(_ sender : UIButton){
+        let img = self.imagesParentView.capture()
+        if let del = self.delegate {
+            del.onPictureCreated(img)
+        }
+        
+        if let nav = self.navigationController {
+            nav.popViewController(animated: true)
+        }
     }
     
     // Return the image but called after is dismissed.

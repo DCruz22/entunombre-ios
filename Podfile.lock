@@ -2,35 +2,56 @@ PODS:
   - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
-  - AssociatedValues (3.0.0)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
+  - AssociatedValues (4.0.0)
   - Cloudinary (2.0.2):
     - Alamofire (~> 4.1)
+  - Crashlytics (3.9.0):
+    - Fabric (~> 1.7.0)
+  - Fabric (1.7.0)
+  - MaterialShowcase (0.1.4)
   - MXParallaxHeader (0.6.1)
+  - ObjectMapper (3.0.0)
   - Realm (2.10.2):
     - Realm/Headers (= 2.10.2)
   - Realm/Headers (2.10.2)
   - RealmSwift (2.10.2):
     - Realm (= 2.10.2)
   - Sharaku (1.0.2)
+  - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
-  - AlamofireImage (~> 3.3)
+  - Alamofire (~> 4.0)
+  - AlamofireImage (~> 3.1)
+  - AlamofireObjectMapper (~> 5.0)
   - AssociatedValues
   - Cloudinary (~> 2.0)
+  - Crashlytics
+  - Fabric
+  - MaterialShowcase
   - MXParallaxHeader
-  - RealmSwift
+  - RealmSwift (~> 2.10.2)
   - Sharaku
+  - YouTubePlayer
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
-  AssociatedValues: 5c29f5c0bb2672cf9ef0394bcbe3ce28b9fa0c2a
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  AssociatedValues: a6a13c9b793fc273b9c40a613dc00377f334d948
   Cloudinary: 2d7c889fc4329ebc59c7967ec277df882b2602d5
+  Crashlytics: 64aad5dd97249dd3ff94b979fea140144590cdd3
+  Fabric: e6be012366472553807dada21243c5ab8d904151
+  MaterialShowcase: af7096af57e1ae93d080ae67c3b4fc37042752d2
   MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
+  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
   Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
   RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
   Sharaku: c18de569fc99f6e936f46ca812b571826cc658a7
+  YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: 7298d5d1afc0cccac4d975c3e572bd7b2d3c0027
+PODFILE CHECKSUM: f62978222c99ec3baba39fd550a2023a0d2dbcb6
 
-COCOAPODS: 1.3.0
+COCOAPODS: 1.4.0.beta.1

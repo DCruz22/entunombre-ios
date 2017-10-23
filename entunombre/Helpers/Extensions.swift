@@ -252,6 +252,8 @@ extension UIColor {
     open class var darkGray:UIColor { return UIColor(hexString: "#A5A5A5FF")!}
     open class var transparent: UIColor { return UIColor(hexString: "#FFFFFF00")! }
     open class var disabledButton: UIColor { return UIColor(hexString: "#A7A7A7FF")! }
+    open class var darkGold: UIColor { return UIColor(hexString: "#B57D19FF")! }
+    open class var lightGold: UIColor { return UIColor(hexString: "#F3BB50FF")! }
 }
 
 extension CALayer {

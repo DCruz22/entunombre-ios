@@ -11,10 +11,12 @@ import MXParallaxHeader
 import AlamofireImage
 import Cloudinary
 import RealmSwift
+import MaterialShowcase
 
 class PictureListViewController: BaseViewController, MXParallaxHeaderDelegate, UITableViewDelegate, UITableViewDataSource, MakePictureDelegate {
     
-
+    @IBOutlet weak var lbNoPicture: UILabel!
+    
     fileprivate var SpanichWhite : UIColor = #colorLiteral(red: 0.9471606319, green: 0.9673129858, blue: 0.9673129858, alpha: 1) // #FEFDF0
     var scrollView: MXScrollView!
     var progressIndicator: UIProgressView!
@@ -24,12 +26,12 @@ class PictureListViewController: BaseViewController, MXParallaxHeaderDelegate, U
     var isVCLoaded = false
     var pictures:[Picture] = []
     let realm = try! Realm()
+    let btnCreatePicture = UIButton(type: UIButtonType.system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.viewControllers.remove(at: 0)
         
-        let btnCreatePicture = UIButton(type: UIButtonType.system)
         btnCreatePicture.setImage(UIImage(named:"ic_camera_filled"), for: UIControlState())
         btnCreatePicture.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         btnCreatePicture.addTarget(self, action: #selector(self.onCreatePicture(_:)), for: UIControlEvents.touchUpInside)
@@ -40,9 +42,6 @@ class PictureListViewController: BaseViewController, MXParallaxHeaderDelegate, U
             heightConstraint.isActive = true
             widthConstraint.isActive = true
         }
-        
-        self.tabBarController?.navigationItem.leftBarButtonItems = []
-        self.tabBarController?.navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: btnCreatePicture)]
         
         scrollView = MXScrollView()
         headerView = Bundle.main.loadNibNamed("StarshipHeader", owner: self, options: nil)?.first as? ParallaxCustomHeader
@@ -65,20 +64,12 @@ class PictureListViewController: BaseViewController, MXParallaxHeaderDelegate, U
         tableView.register(UINib(nibName: "PictureListCell", bundle: nil),
                               forCellReuseIdentifier: "PictureListCell")
         scrollView.addSubview(tableView)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationItem.leftBarButtonItems = []
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        scrollView.parallaxHeader.minimumHeight = headerMinimumHeight
-        isVCLoaded = true
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+        
+        if pictures.count == 0 {
+            self.view.bringSubview(toFront: lbNoPicture)
+        } else {
+            self.lbNoPicture.alpha = 0
+        }
         
         var frame = view.frame
         
@@ -93,18 +84,53 @@ class PictureListViewController: BaseViewController, MXParallaxHeaderDelegate, U
         progressIndicator.frame = frame
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.navigationController?.navigationBar.tintColor = UIColor.darkText
+        self.navigationController?.navigationBar.tintColor = UIColor.darkGold
+        
+        self.navigationItem.leftBarButtonItems = []
+        self.tabBarController?.navigationItem.leftBarButtonItems = []
+        self.tabBarController?.navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: btnCreatePicture)]
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        scrollView.parallaxHeader.minimumHeight = headerMinimumHeight
+        isVCLoaded = true
+        
+        if let button = self.tabBarController?.navigationItem.rightBarButtonItems?[0], !LocalStorage.shared.isTutorialShown {
+            let showcase = MaterialShowcase()
+            LocalStorage.shared.isTutorialShown = true
+            showcase.setTargetView(barButtonItem: button)
+            showcase.primaryText = "¡Haz tu foto!"
+            showcase.secondaryText = "Clickea el ícono de la cámara para hacer una nueva foto."
+            showcase.backgroundPromptColor = UIColor.darkGold
+            showcase.targetTintColor = UIColor.black
+            showcase.show(completion: nil)
+        }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+    
     func onLoadPictures() {
         self.pictures = Array(realm.objects(Picture.self).sorted(byKeyPath: "timestamp", ascending: false))
         tableView.reloadData()
+        
+        if pictures.count == 0 {
+            self.view.bringSubview(toFront: lbNoPicture)
+        } else {
+            self.lbNoPicture.alpha = 0
+        }
     }
-    
     
     @objc func onSharePicture(_ sender : CustomUITapGesture){
         if let cell = tableView.cellForRow(at: IndexPath(row: sender.tag, section: 0)) as? PictureListCell {
             
-            let textToShare = "Yo voy para #EnTuNombre Jesús. Descarga la app y hazte una foto!"
+            //let textToShare = "Yo voy para #EnTuNombre Jesús. Descarga la app y hazte una foto!"
             
-            let objectsToShare = [textToShare, cell.ivPicture.image!] as [Any]
+            let objectsToShare = [cell.ivPicture.image!] as [Any]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             
             activityVC.popoverPresentationController?.sourceView = sender.view!
@@ -186,12 +212,28 @@ class PictureListViewController: BaseViewController, MXParallaxHeaderDelegate, U
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let picture = self.pictures[indexPath.row]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "PictureListCell") as? PictureListCell
+        cell?.vContainer.frame.size.width = cell?.frame.size.width ?? 0
+        
+        switch UIDevice().screenType {
+        case .iPhone6Plus:
+            cell?.lbNameWidthConstraint.constant = 230
+            break
+        case .iPhone6:
+            cell?.lbNameWidthConstraint.constant = 200
+            break
+        case .iPhone5, .iPhone4:
+            cell?.lbNameWidthConstraint.constant = 160
+            break
+        default: break
+        }
         
         cell?.lbName!.text = "\(picture.timestamp)"
-        let url = URL(string: picture.url)!
-        cell?.ivPicture.borderRadius(corners: [.allCorners], radius: 2)
-        cell?.ivPicture.af_setImage(withURL: url)
+        if let url = URL(string: picture.url) {
+            cell?.ivPicture.borderRadius(corners: [.allCorners], radius: 2)
+            cell?.ivPicture.af_setImage(withURL: url)
+        }
         let tap = CustomUITapGesture(target: self, action: #selector(self.onSharePicture(_:)))
         tap.textTag = picture.url
         tap.tag = indexPath.row
