@@ -12,7 +12,7 @@ import Sharaku
 class MakePictureViewController: BaseViewController, FusumaDelegate, SHViewControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImagesView!
     @IBOutlet weak var upperImageView: UIImageView!
     @IBOutlet weak var imagesParentView: UIView!
     @IBOutlet weak var vLoading: UIView!
@@ -25,9 +25,7 @@ class MakePictureViewController: BaseViewController, FusumaDelegate, SHViewContr
     var croppedImage:UIImage? = nil
     var frameCollectionViewHeight:CGFloat = 0
     var frames = [UIImage(named:"frame1"), UIImage(named:"frame2"), UIImage(named:"frame3"),
-                  UIImage(named:"frame4"), UIImage(named:"frame5"), UIImage(named:"frame6"),
-                  UIImage(named:"frame7"), UIImage(named:"frame8"), UIImage(named:"frame9"),
-                  UIImage(named:"frame10"), UIImage(named:"frame11"), UIImage(named:"frame12")]
+                  UIImage(named:"frame4"), UIImage(named:"frame5"), UIImage(named:"frame6")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
